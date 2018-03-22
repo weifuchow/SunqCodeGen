@@ -1,0 +1,23 @@
+java.lang.RuntimeException: generate oucur error,templateFile is:${source_dir}\${classNameFirstLower}\entity\${className}Query.java => C:\Users\Administrator\git\genCode\.\src\main\java\com\msxf\zwf\activitiesCourse\entity\ActivitiesCourseQuery.java cause:freemarker.core.InvalidReferenceException: Expression aa is undefined on line 4, column 26 in ${source_dir}\${classNameFirstLower}\entity\${className}Query.java.
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.executeGenerate(Generator.java:319)
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.access$100(Generator.java:280)
+	at cn.org.rapid_framework.generator.Generator.scanTemplatesAndProcess(Generator.java:262)
+	at cn.org.rapid_framework.generator.Generator.processTemplateRootDirs(Generator.java:201)
+	at cn.org.rapid_framework.generator.Generator.generateBy(Generator.java:168)
+	at cn.org.rapid_framework.generator.GeneratorFacade$ProcessUtils.processByTable(GeneratorFacade.java:248)
+	at cn.org.rapid_framework.generator.GeneratorFacade$ProcessUtils.processByTable(GeneratorFacade.java:218)
+	at cn.org.rapid_framework.generator.GeneratorFacade.generateByTable(GeneratorFacade.java:107)
+	at GenCode.main(GenCode.java:14)
+Caused by: freemarker.core.InvalidReferenceException: Expression aa is undefined on line 4, column 26 in ${source_dir}\${classNameFirstLower}\entity\${className}Query.java.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.processTemplateForGeneratorControl(Generator.java:350)
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.executeGenerate(Generator.java:308)
+	... 8 more
