@@ -1,4 +1,6 @@
-package ${basepackage}.entity;
+<#assign className = table.className>
+<#assign classNameLower = className?uncap_first>
+package ${basepackage}.${classNameLower}.entity;
 
 /**
  * Created by chuangang.li on 2017/1/19.

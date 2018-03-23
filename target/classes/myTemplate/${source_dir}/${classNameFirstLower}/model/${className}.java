@@ -1,9 +1,9 @@
 <#include "/macro.include"/>
 <#assign className = table.className>
 <#assign classNameLower = className?uncap_first>
-package ${basepackage}.model;
+package ${basepackage}.${classNameLower}.model;
 
-import ${basepackage}.utils.DataTypeUtils;
+import ${basepackage}.${classNameLower}.utils.DataTypeUtils;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.io.Serializable;
@@ -12,9 +12,10 @@ import java.util.Map;
 import java.util.Date;
 
 /**
- * @表名 ${table.sqlName}
- * ${table}
- * @author weifuzhou
+ * @表名 ${table.sqlName}的实体类
+ * @category ${table.remarks}
+ * @author weifuzhou ${now?string("yyyy-MM-dd HH:mm:ss")}
+ * 
  */
 @Entity
 @Table(name = "${table.sqlName}")
@@ -38,6 +39,7 @@ public class ${className} implements Serializable{
 
 <#list table.columns as column>
     /**
+     * ${column.table.sqlName}
      * <p>${column.columnAlias}</p>
      */
     public void set${column.columnName}(${column.javaType} value){

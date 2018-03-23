@@ -1,8 +1,11 @@
-package ${basepackage}.service;
+<#assign className = table.className>
+<#assign classNameLower = className?uncap_first>
 
-import ${basepackage}.entity.BaseQuery;
-import ${basepackage}.entity.MsxfResult;
-import ${basepackage}.entity.PageResult;
+package ${basepackage}.${classNameLower}.service;
+
+import ${basepackage}.${classNameLower}.entity.BaseQuery;
+import ${basepackage}.${classNameLower}.entity.MsxfResult;
+import ${basepackage}.${classNameLower}.entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;

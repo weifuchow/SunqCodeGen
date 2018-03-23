@@ -22,7 +22,7 @@
     <entry key="jdbc_password">innosrv_dev</entry>
 
     <!-- oracle需要指定jdbc.schema,其它数据库忽略此项配置  -->
-    <entry key="jdbc_schema"></entry>
+    <entry key="jdbc_schema">INNOSRV_DEV</entry>
     <entry key="jdbc_catalog"></entry>
 
     <!-- 数据库类型映射  -->

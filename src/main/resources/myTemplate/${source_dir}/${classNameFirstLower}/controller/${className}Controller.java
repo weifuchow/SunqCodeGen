@@ -1,12 +1,12 @@
 <#assign className = table.className>
 <#assign classNameLower = className?uncap_first>
-package ${basepackage}.controller;
+package ${basepackage}.${classNameLower}.controller;
 
-import ${basepackage}.entity.${className}Query;
-import ${basepackage}.entity.MsxfResult;
-import ${basepackage}.model.*;
+import ${basepackage}.${classNameLower}.entity.${className}Query;
+import ${basepackage}.${classNameLower}.entity.MsxfResult;
+import ${basepackage}.${classNameLower}.model.*;
 import org.springframework.stereotype.Service;
-import ${basepackage}.service.${className}Service;
+import ${basepackage}.${classNameLower}.service.${className}Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

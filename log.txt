@@ -1,119 +1,734 @@
-2018-03-22 16:33:18.971  INFO 8452 --- [main] com.msxf.zwf.DemoApplication             : Starting DemoApplication on IRIS-20161212TE with PID 8452 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
-2018-03-22 16:33:19.001  INFO 8452 --- [main] com.msxf.zwf.DemoApplication             : No active profile set, falling back to default profiles: default
-2018-03-22 16:33:19.048  INFO 8452 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:33:19 CST 2018]; root of context hierarchy
-2018-03-22 16:33:20.265  INFO 8452 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3e468b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-03-22 16:33:20.567  INFO 8452 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
-2018-03-22 16:33:20.575  INFO 8452 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2018-03-22 16:33:20.576  INFO 8452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
-2018-03-22 16:33:20.761  INFO 8452 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-03-22 16:33:20.762  INFO 8452 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1733 ms
-2018-03-22 16:33:20.912  INFO 8452 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2018-03-22 16:33:20.915  INFO 8452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-03-22 16:33:20.916  INFO 8452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-03-22 16:33:20.916  INFO 8452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-03-22 16:33:20.916  INFO 8452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-03-22 16:33:21.470  INFO 8452 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:33:21.479  INFO 8452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-03-23 09:41:17.721  INFO 8228 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 8228 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 09:41:17.723  INFO 8228 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 09:41:17.752  INFO 8228 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Mar 23 09:41:17 CST 2018]; root of context hierarchy
+2018-03-23 09:41:18.806  INFO 8228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3e468b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 09:41:19.172  INFO 8228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 09:41:19.179  INFO 8228 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 09:41:19.180  INFO 8228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 09:41:19.258  INFO 8228 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 09:41:19.259  INFO 8228 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1509 ms
+2018-03-23 09:41:19.417  INFO 8228 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 09:41:19.421  INFO 8228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 09:41:19.421  INFO 8228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 09:41:19.422  INFO 8228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 09:41:19.422  INFO 8228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 09:41:19.979  INFO 8228 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 09:41:19.988  INFO 8228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-03-22 16:33:21.525  INFO 8452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
-2018-03-22 16:33:21.527  INFO 8452 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-03-22 16:33:21.527  INFO 8452 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2018-03-22 16:33:21.571  INFO 8452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-03-22 16:33:21.669  INFO 8452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
-2018-03-22 16:33:22.072  INFO 8452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:33:22.438  INFO 8452 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:33:19 CST 2018]; root of context hierarchy
-2018-03-22 16:33:22.480  INFO 8452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insAdmin],methods=[GET]}" onto public com.msxf.zwf.entity.MsxfResult com.msxf.zwf.controller.InsAdminController.insAdmin(com.msxf.zwf.entity.InsAdminQuery)
-2018-03-22 16:33:22.483  INFO 8452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-03-22 16:33:22.483  INFO 8452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-03-22 16:33:22.505  INFO 8452 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:33:22.505  INFO 8452 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:33:22.531  INFO 8452 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:33:22.697  INFO 8452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-03-22 16:33:22.848  INFO 8452 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
-2018-03-22 16:33:22.851  INFO 8452 --- [main] com.msxf.zwf.DemoApplication             : Started DemoApplication in 4.146 seconds (JVM running for 4.624)
-2018-03-22 16:35:21.182  INFO 8452 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-03-22 16:35:21.182  INFO 8452 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:33:19 CST 2018]; root of context hierarchy
-2018-03-22 16:35:21.184  INFO 8452 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
-2018-03-22 16:35:21.185  INFO 8452 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:37:20.231  INFO 8728 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 8728 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
-2018-03-22 16:37:20.233  INFO 8728 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
-2018-03-22 16:37:20.262  INFO 8728 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:37:20 CST 2018]; root of context hierarchy
-2018-03-22 16:37:21.253  INFO 8728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3e468b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-03-22 16:37:21.576  INFO 8728 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
-2018-03-22 16:37:21.582  INFO 8728 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2018-03-22 16:37:21.583  INFO 8728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
-2018-03-22 16:37:21.649  INFO 8728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-03-22 16:37:21.650  INFO 8728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1390 ms
-2018-03-22 16:37:21.777  INFO 8728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2018-03-22 16:37:21.780  INFO 8728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-03-22 16:37:21.781  INFO 8728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-03-22 16:37:21.781  INFO 8728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-03-22 16:37:21.781  INFO 8728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-03-22 16:37:22.359  INFO 8728 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:37:22.367  INFO 8728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-03-23 09:41:20.035  INFO 8228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 09:41:20.036  INFO 8228 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 09:41:20.037  INFO 8228 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 09:41:20.065  INFO 8228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 09:41:20.153  INFO 8228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 09:41:20.704  INFO 8228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 09:41:21.084  INFO 8228 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Mar 23 09:41:17 CST 2018]; root of context hierarchy
+2018-03-23 09:41:21.131  INFO 8228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/activitiesCourse],methods=[GET]}" onto public com.msxf.zwf.activitiesCourse.entity.MsxfResult com.msxf.zwf.activitiesCourse.controller.ActivitiesCourseController.activitiesCourse(com.msxf.zwf.activitiesCourse.entity.ActivitiesCourseQuery)
+2018-03-23 09:41:21.134  INFO 8228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 09:41:21.134  INFO 8228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 09:41:21.156  INFO 8228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 09:41:21.156  INFO 8228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 09:41:21.183  INFO 8228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 09:41:21.396  INFO 8228 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 09:41:21.470  INFO 8228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 09:41:21.474  INFO 8228 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 3.993 seconds (JVM running for 4.884)
+2018-03-23 09:41:45.010  INFO 8228 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 09:41:45.011  INFO 8228 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 09:41:45.065  INFO 8228 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2018-03-23 09:41:45.242  INFO 8228 --- [http-nio-8801-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-23 09:41:45.380  WARN 8228 --- [http-nio-8801-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 904, SQLState: 42000
+2018-03-23 09:41:45.380 ERROR 8228 --- [http-nio-8801-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-00904: "ACTIVITIES0_"."ZJ_PAGE_COUNT": 标识符无效
+
+2018-03-23 09:41:45.399 ERROR 8228 --- [http-nio-8801-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
+
+java.sql.SQLSyntaxErrorException: ORA-00904: "ACTIVITIES0_"."ZJ_PAGE_COUNT": 标识符无效
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:91) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:206) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1034) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:194) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:791) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:866) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1186) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3387) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3431) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1491) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:70) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2117) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1900) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1876) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:919) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:336) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2617) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2600) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2429) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2424) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:501) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:371) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:216) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1326) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:87) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:606) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:483) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.criteria.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:50) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:586) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:566) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:406) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:375) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:503) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:488) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:460) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy78.findAll(Unknown Source) ~[na:na]
+	at com.msxf.zwf.activitiesCourse.service.BaseService.getPage(BaseService.java:29) ~[classes/:na]
+	at com.msxf.zwf.activitiesCourse.controller.ActivitiesCourseController.activitiesCourse(ActivitiesCourseController.java:19) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2018-03-23 09:48:38.550  INFO 8228 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-23 09:48:38.551  INFO 8228 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Fri Mar 23 09:41:17 CST 2018]; root of context hierarchy
+2018-03-23 09:48:38.553  INFO 8228 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-23 09:48:38.554  INFO 8228 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 13:14:42.162  INFO 9844 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 9844 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 13:14:42.412  INFO 9844 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 13:14:42.508  INFO 9844 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4df50bcc: startup date [Fri Mar 23 13:14:42 CST 2018]; root of context hierarchy
+2018-03-23 13:14:44.117  INFO 9844 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99fa0d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 13:14:44.750  INFO 9844 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 13:14:44.759  INFO 9844 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 13:14:44.760  INFO 9844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 13:14:44.891  INFO 9844 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 13:14:44.892  INFO 9844 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2387 ms
+2018-03-23 13:14:45.075  INFO 9844 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 13:14:45.080  INFO 9844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 13:14:45.080  INFO 9844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 13:14:45.081  INFO 9844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 13:14:45.084  INFO 9844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 13:14:45.943  INFO 9844 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 13:14:46.014  INFO 9844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-03-22 16:37:22.413  INFO 8728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
-2018-03-22 16:37:22.415  INFO 8728 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-03-22 16:37:22.415  INFO 8728 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2018-03-22 16:37:22.443  INFO 8728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-03-22 16:37:22.547  INFO 8728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
-2018-03-22 16:37:22.925  INFO 8728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:37:23.241  INFO 8728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:37:20 CST 2018]; root of context hierarchy
-2018-03-22 16:37:23.282  INFO 8728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insAdmin],methods=[GET]}" onto public com.msxf.zwf.entity.MsxfResult com.msxf.zwf.controller.InsAdminController.insAdmin(com.msxf.zwf.entity.InsAdminQuery)
-2018-03-22 16:37:23.285  INFO 8728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-03-22 16:37:23.285  INFO 8728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-03-22 16:37:23.306  INFO 8728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:37:23.306  INFO 8728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:37:23.332  INFO 8728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:37:23.495  INFO 8728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-03-22 16:37:23.533  INFO 8728 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
-2018-03-22 16:37:23.536  INFO 8728 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 3.543 seconds (JVM running for 4.014)
-2018-03-22 16:39:45.501  INFO 8728 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-03-22 16:39:45.502  INFO 8728 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:37:20 CST 2018]; root of context hierarchy
-2018-03-22 16:39:45.504  INFO 8728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
-2018-03-22 16:39:45.504  INFO 8728 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:40:07.758  INFO 208 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 208 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
-2018-03-22 16:40:07.760  INFO 208 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
-2018-03-22 16:40:07.787  INFO 208 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:40:07 CST 2018]; root of context hierarchy
-2018-03-22 16:40:08.785  INFO 208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9792cfc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-03-22 16:40:09.071  INFO 208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
-2018-03-22 16:40:09.078  INFO 208 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2018-03-22 16:40:09.078  INFO 208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
-2018-03-22 16:40:09.157  INFO 208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-03-22 16:40:09.157  INFO 208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
-2018-03-22 16:40:09.277  INFO 208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2018-03-22 16:40:09.289  INFO 208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-03-22 16:40:09.290  INFO 208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-03-22 16:40:09.290  INFO 208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-03-22 16:40:09.290  INFO 208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-03-22 16:40:09.822  INFO 208 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:40:09.831  INFO 208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-03-23 13:14:46.187  INFO 9844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 13:14:46.189  INFO 9844 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 13:14:46.190  INFO 9844 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 13:14:46.284  INFO 9844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 13:14:46.457  INFO 9844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 13:14:47.263  INFO 9844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 13:14:47.818  INFO 9844 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4df50bcc: startup date [Fri Mar 23 13:14:42 CST 2018]; root of context hierarchy
+2018-03-23 13:14:47.871  INFO 9844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/activitiesCourse],methods=[GET]}" onto public com.msxf.zwf.activitiesCourse.entity.MsxfResult com.msxf.zwf.activitiesCourse.controller.ActivitiesCourseController.activitiesCourse(com.msxf.zwf.activitiesCourse.entity.ActivitiesCourseQuery)
+2018-03-23 13:14:47.874  INFO 9844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 13:14:47.874  INFO 9844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 13:14:47.898  INFO 9844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 13:14:47.898  INFO 9844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 13:14:47.940  INFO 9844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 13:14:48.215  INFO 9844 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 13:14:48.277  INFO 9844 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 13:14:48.280  INFO 9844 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 6.842 seconds (JVM running for 8.217)
+2018-03-23 13:15:11.042  INFO 9844 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 13:15:11.042  INFO 9844 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 13:15:11.112  INFO 9844 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 69 ms
+2018-03-23 13:15:11.242  INFO 9844 --- [http-nio-8801-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-23 13:15:19.664  INFO 9844 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-23 13:15:19.665  INFO 9844 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4df50bcc: startup date [Fri Mar 23 13:14:42 CST 2018]; root of context hierarchy
+2018-03-23 13:15:19.667  INFO 9844 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-23 13:15:19.668  INFO 9844 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 14:15:27.753  INFO 10456 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 10456 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 14:15:27.756  INFO 10456 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 14:15:27.784  INFO 10456 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4df50bcc: startup date [Fri Mar 23 14:15:27 CST 2018]; root of context hierarchy
+2018-03-23 14:15:28.851  INFO 10456 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99fa0d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 14:15:29.165  INFO 10456 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 14:15:29.174  INFO 10456 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 14:15:29.174  INFO 10456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 14:15:29.266  INFO 10456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 14:15:29.267  INFO 10456 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1485 ms
+2018-03-23 14:15:29.438  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 14:15:29.445  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 14:15:29.446  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 14:15:29.448  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 14:15:29.449  INFO 10456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 14:15:30.062  INFO 10456 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 14:15:30.071  INFO 10456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-03-22 16:40:09.877  INFO 208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
-2018-03-22 16:40:09.878  INFO 208 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-03-22 16:40:09.880  INFO 208 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2018-03-22 16:40:09.908  INFO 208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-03-22 16:40:10.008  INFO 208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
-2018-03-22 16:40:10.434  INFO 208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-03-22 16:40:10.744  INFO 208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:40:07 CST 2018]; root of context hierarchy
-2018-03-22 16:40:10.789  INFO 208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insAdmin/getAll],methods=[GET]}" onto public java.util.List com.msxf.zwf.controller.InsAdminController.getAll()
-2018-03-22 16:40:10.791  INFO 208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insAdmin],methods=[GET]}" onto public com.msxf.zwf.entity.MsxfResult com.msxf.zwf.controller.InsAdminController.insAdmin(com.msxf.zwf.entity.InsAdminQuery)
-2018-03-22 16:40:10.793  INFO 208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-03-22 16:40:10.793  INFO 208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-03-22 16:40:10.818  INFO 208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:40:10.819  INFO 208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:40:10.852  INFO 208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-03-22 16:40:11.053  INFO 208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-03-22 16:40:11.100  INFO 208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
-2018-03-22 16:40:11.105  INFO 208 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 3.577 seconds (JVM running for 4.062)
-2018-03-22 16:40:46.045  INFO 208 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-03-22 16:40:46.046  INFO 208 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2018-03-22 16:40:46.061  INFO 208 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
-2018-03-22 16:40:54.782  INFO 208 --- [http-nio-8801-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-03-22 17:04:55.537  INFO 208 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-03-22 17:04:55.538  INFO 208 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23986957: startup date [Thu Mar 22 16:40:07 CST 2018]; root of context hierarchy
-2018-03-22 17:04:55.540  INFO 208 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
-2018-03-22 17:04:55.541  INFO 208 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 14:15:30.121  INFO 10456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 14:15:30.122  INFO 10456 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 14:15:30.123  INFO 10456 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 14:15:30.155  INFO 10456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 14:15:30.250  INFO 10456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 14:15:30.663  INFO 10456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 14:15:31.020  INFO 10456 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4df50bcc: startup date [Fri Mar 23 14:15:27 CST 2018]; root of context hierarchy
+2018-03-23 14:15:31.071  INFO 10456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser],methods=[GET]}" onto public com.msxf.zwf.sysUser.entity.MsxfResult com.msxf.zwf.sysUser.controller.SysUserController.sysUser(com.msxf.zwf.sysUser.entity.SysUserQuery)
+2018-03-23 14:15:31.074  INFO 10456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 14:15:31.074  INFO 10456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 14:15:31.100  INFO 10456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 14:15:31.100  INFO 10456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 14:15:31.129  INFO 10456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 14:15:31.311  INFO 10456 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 14:15:31.359  INFO 10456 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 14:15:31.363  INFO 10456 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 3.876 seconds (JVM running for 4.42)
+2018-03-23 14:16:35.525  INFO 10456 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 14:16:35.526  INFO 10456 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 14:16:35.546  INFO 10456 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-03-23 14:16:35.607  INFO 10456 --- [http-nio-8801-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-23 14:43:19.551  INFO 10456 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-23 14:43:19.552  INFO 10456 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4df50bcc: startup date [Fri Mar 23 14:15:27 CST 2018]; root of context hierarchy
+2018-03-23 14:43:19.554  INFO 10456 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-23 14:43:19.555  INFO 10456 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:34:40.748  INFO 10852 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 10852 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 15:34:40.753  INFO 10852 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 15:34:40.846  INFO 10852 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 15:34:40 CST 2018]; root of context hierarchy
+2018-03-23 15:34:42.175  INFO 10852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 15:34:42.423  INFO 10852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 15:34:42.437  INFO 10852 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Solr - Could not safely identify store assignment for repository candidate interface com.msxf.zwf.sysUser.repository.SysUserRepository.
+2018-03-23 15:34:43.013  INFO 10852 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4893099c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 15:34:44.001  INFO 10852 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 15:34:44.022  INFO 10852 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 15:34:44.023  INFO 10852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 15:34:44.173  INFO 10852 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 15:34:44.173  INFO 10852 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3330 ms
+2018-03-23 15:34:44.400  INFO 10852 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 15:34:44.406  INFO 10852 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 15:34:44.406  INFO 10852 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 15:34:44.407  INFO 10852 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 15:34:44.407  INFO 10852 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 15:34:45.418  INFO 10852 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:34:45.455  INFO 10852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-23 15:34:46.163  INFO 10852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 15:34:46.166  INFO 10852 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 15:34:46.195  INFO 10852 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 15:34:47.066  INFO 10852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 15:34:49.205  INFO 10852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 15:34:49.703  INFO 10852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:34:50.350  INFO 10852 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 15:34:40 CST 2018]; root of context hierarchy
+2018-03-23 15:34:50.437  INFO 10852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/query],methods=[GET]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.sysUser(com.msxf.zwf.sysUser.entity.SysUserQuery)
+2018-03-23 15:34:50.439  INFO 10852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/add],methods=[POST]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.addSysUser(com.msxf.zwf.sysUser.model.SysUser)
+2018-03-23 15:34:50.441  INFO 10852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 15:34:50.442  INFO 10852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 15:34:50.479  INFO 10852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:34:50.479  INFO 10852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:34:50.542  INFO 10852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:34:50.986  INFO 10852 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 15:34:51.132  INFO 10852 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 15:34:51.138  INFO 10852 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 10.997 seconds (JVM running for 11.427)
+2018-03-23 15:35:24.382  INFO 10852 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 15:35:24.382  INFO 10852 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 15:35:24.413  INFO 10852 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-03-23 15:35:24.530  INFO 10852 --- [http-nio-8801-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-23 15:40:40.867 ERROR 10852 --- [http-nio-8801-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.msxf.zwf.sysUser.model.SysUser; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.msxf.zwf.sysUser.model.SysUser] with root cause
+
+org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.msxf.zwf.sysUser.model.SysUser
+	at org.hibernate.id.Assigned.generate(Assigned.java:34) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:101) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:775) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:748) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:753) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:347) ~[spring-orm-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy77.persist(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298) ~[spring-orm-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy77.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:506) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:503) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:488) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:460) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy79.save(Unknown Source) ~[na:na]
+	at com.msxf.zwf.sysUser.service.BaseService.save(BaseService.java:58) ~[classes/:na]
+	at com.msxf.zwf.sysUser.controller.SysUserController.addSysUser(SysUserController.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2018-03-23 15:47:14.270  INFO 9908 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 9908 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 15:47:14.273  INFO 9908 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 15:47:14.333  INFO 9908 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 15:47:14 CST 2018]; root of context hierarchy
+2018-03-23 15:47:15.536  INFO 9908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 15:47:15.637  INFO 9908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 15:47:15.651  INFO 9908 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Solr - Could not safely identify store assignment for repository candidate interface com.msxf.zwf.sysUser.repository.SysUserRepository.
+2018-03-23 15:47:15.992  INFO 9908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40591e27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 15:47:16.659  INFO 9908 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 15:47:16.678  INFO 9908 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 15:47:16.680  INFO 9908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 15:47:16.835  INFO 9908 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 15:47:16.835  INFO 9908 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2505 ms
+2018-03-23 15:47:17.011  INFO 9908 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 15:47:17.017  INFO 9908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 15:47:17.018  INFO 9908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 15:47:17.018  INFO 9908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 15:47:17.019  INFO 9908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 15:47:17.737  INFO 9908 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:47:17.755  INFO 9908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-23 15:47:17.907  INFO 9908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 15:47:17.909  INFO 9908 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 15:47:17.911  INFO 9908 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 15:47:17.966  INFO 9908 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 15:47:18.097  INFO 9908 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 15:47:18.295  WARN 9908 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-03-23 15:47:18.541  INFO 9908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:47:19.050  INFO 9908 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 15:47:14 CST 2018]; root of context hierarchy
+2018-03-23 15:47:19.152  INFO 9908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/query],methods=[GET]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.sysUser(com.msxf.zwf.sysUser.entity.SysUserQuery)
+2018-03-23 15:47:19.154  INFO 9908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/add],methods=[POST]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.addSysUser(com.msxf.zwf.sysUser.model.SysUser)
+2018-03-23 15:47:19.157  INFO 9908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 15:47:19.158  INFO 9908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 15:47:19.202  INFO 9908 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:47:19.202  INFO 9908 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:47:19.256  INFO 9908 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:47:19.739  INFO 9908 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 15:47:19.816  INFO 9908 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 15:47:19.822  INFO 9908 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 5.987 seconds (JVM running for 6.472)
+2018-03-23 15:47:30.726  INFO 9908 --- [http-nio-8801-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 15:47:30.727  INFO 9908 --- [http-nio-8801-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 15:47:30.745  INFO 9908 --- [http-nio-8801-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-03-23 15:47:30.869  WARN 9908 --- [http-nio-8801-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 2289, SQLState: 42000
+2018-03-23 15:47:30.870 ERROR 9908 --- [http-nio-8801-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-02289: 序列不存在
+
+2018-03-23 15:47:30.883 ERROR 9908 --- [http-nio-8801-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
+
+java.sql.SQLSyntaxErrorException: ORA-02289: 序列不存在
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:91) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:133) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:206) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1034) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:194) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:791) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:866) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1186) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3387) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3431) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1491) ~[ojdbc6-11.1.0.7.0.jar:Oracle JDBC Driver version - "11.1.0.7.0-Production"]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:70) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.id.SequenceGenerator.generateHolder(SequenceGenerator.java:116) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.id.SequenceGenerator.generate(SequenceGenerator.java:109) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:101) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:775) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:748) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:753) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146) ~[hibernate-entitymanager-5.0.11.Final.jar:5.0.11.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:347) ~[spring-orm-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy78.persist(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298) ~[spring-orm-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy78.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:506) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:503) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:488) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:460) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy80.save(Unknown Source) ~[na:na]
+	at com.msxf.zwf.sysUser.service.BaseService.save(BaseService.java:58) ~[classes/:na]
+	at com.msxf.zwf.sysUser.controller.SysUserController.addSysUser(SysUserController.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2018-03-23 15:51:50.504  INFO 10252 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 10252 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 15:51:50.507  INFO 10252 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 15:51:50.567  INFO 10252 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 15:51:50 CST 2018]; root of context hierarchy
+2018-03-23 15:51:51.852  INFO 10252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 15:51:51.972  INFO 10252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 15:51:51.992  INFO 10252 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Solr - Could not safely identify store assignment for repository candidate interface com.msxf.zwf.sysUser.repository.SysUserRepository.
+2018-03-23 15:51:52.397  INFO 10252 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40591e27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 15:51:53.254  INFO 10252 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 15:51:53.272  INFO 10252 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 15:51:53.273  INFO 10252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 15:51:53.454  INFO 10252 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 15:51:53.455  INFO 10252 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2890 ms
+2018-03-23 15:51:53.700  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 15:51:53.704  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 15:51:53.705  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 15:51:53.705  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 15:51:53.705  INFO 10252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 15:51:54.431  INFO 10252 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:51:54.447  INFO 10252 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-23 15:51:54.599  INFO 10252 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 15:51:54.601  INFO 10252 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 15:51:54.602  INFO 10252 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 15:51:54.646  INFO 10252 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 15:51:54.789  INFO 10252 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 15:51:54.990  WARN 10252 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-03-23 15:51:55.251  INFO 10252 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 15:51:55.783  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 15:51:50 CST 2018]; root of context hierarchy
+2018-03-23 15:51:55.871  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/query],methods=[GET]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.sysUser(com.msxf.zwf.sysUser.entity.SysUserQuery)
+2018-03-23 15:51:55.873  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/add],methods=[POST]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.addSysUser(com.msxf.zwf.sysUser.model.SysUser)
+2018-03-23 15:51:55.875  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 15:51:55.876  INFO 10252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 15:51:55.917  INFO 10252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:51:55.919  INFO 10252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:51:55.966  INFO 10252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 15:51:56.347  INFO 10252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 15:51:56.408  INFO 10252 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 15:51:56.412  INFO 10252 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 6.334 seconds (JVM running for 6.764)
+2018-03-23 15:52:08.688  INFO 10252 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 15:52:08.688  INFO 10252 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 15:52:08.708  INFO 10252 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-03-23 16:01:39.089  INFO 10796 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 10796 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 16:01:39.092  INFO 10796 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 16:01:39.127  INFO 10796 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Fri Mar 23 16:01:39 CST 2018]; root of context hierarchy
+2018-03-23 16:01:40.097  INFO 10796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 16:01:40.174  INFO 10796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 16:01:40.186  INFO 10796 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Solr - Could not safely identify store assignment for repository candidate interface com.msxf.zwf.sysUser.repository.SysUserRepository.
+2018-03-23 16:01:40.556  INFO 10796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c6e0ecd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 16:01:40.915  INFO 10796 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 16:01:40.923  INFO 10796 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 16:01:40.924  INFO 10796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 16:01:41.027  INFO 10796 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 16:01:41.027  INFO 10796 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1902 ms
+2018-03-23 16:01:41.185  INFO 10796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 16:01:41.190  INFO 10796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 16:01:41.191  INFO 10796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 16:01:41.191  INFO 10796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 16:01:41.192  INFO 10796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 16:01:41.797  INFO 10796 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 16:01:41.808  INFO 10796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-23 16:01:41.854  INFO 10796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 16:01:41.855  INFO 10796 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 16:01:41.856  INFO 10796 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 16:01:41.891  INFO 10796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 16:01:41.985  INFO 10796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 16:01:42.130  WARN 10796 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-03-23 16:01:42.409  INFO 10796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 16:01:42.769  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Fri Mar 23 16:01:39 CST 2018]; root of context hierarchy
+2018-03-23 16:01:42.819  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/query],methods=[GET]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.sysUser(com.msxf.zwf.sysUser.entity.SysUserQuery)
+2018-03-23 16:01:42.820  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/add],methods=[POST]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.addSysUser(com.msxf.zwf.sysUser.model.SysUser)
+2018-03-23 16:01:42.820  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/update],methods=[POST]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.UpdateSysUser(com.msxf.zwf.sysUser.model.SysUser)
+2018-03-23 16:01:42.820  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysUser/api/delete],methods=[GET]}" onto public com.msxf.zwf.sysUser.entity.WeifuResult com.msxf.zwf.sysUser.controller.SysUserController.UpdateSysUser(java.lang.Long)
+2018-03-23 16:01:42.821  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 16:01:42.822  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 16:01:42.848  INFO 10796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 16:01:42.848  INFO 10796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 16:01:42.883  INFO 10796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 16:01:43.151  INFO 10796 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 16:01:43.202  INFO 10796 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 16:01:43.206  INFO 10796 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 4.383 seconds (JVM running for 5.219)
+2018-03-23 16:04:04.949  INFO 10796 --- [http-nio-8801-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 16:04:04.950  INFO 10796 --- [http-nio-8801-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 16:04:04.981  INFO 10796 --- [http-nio-8801-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-03-23 16:04:05.005  WARN 10796 --- [http-nio-8801-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-03-23 17:03:08.689 ERROR 10796 --- [http-nio-8801-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.EmptyResultDataAccessException: No class com.msxf.zwf.sysUser.model.SysUser entity with id 1100002071622 exists!] with root cause
+
+org.springframework.dao.EmptyResultDataAccessException: No class com.msxf.zwf.sysUser.model.SysUser entity with id 1100002071622 exists!
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.delete(SimpleJpaRepository.java:152) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:503) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:488) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:460) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61) ~[spring-data-commons-1.12.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.10.6.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy81.delete(Unknown Source) ~[na:na]
+	at com.msxf.zwf.sysUser.service.BaseService.deleteById(BaseService.java:50) ~[classes/:na]
+	at com.msxf.zwf.sysUser.controller.SysUserController.UpdateSysUser(SysUserController.java:33) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2018-03-23 17:03:53.394  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-23 17:03:53.394  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Fri Mar 23 16:01:39 CST 2018]; root of context hierarchy
+2018-03-23 17:03:53.421  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-23 17:03:53.422  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

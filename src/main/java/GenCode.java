@@ -11,7 +11,7 @@ public class GenCode {
         //删除生成器的输出目录//
         //g.deleteOutRootDir();
         //通过数据库表生成文件
-        g.generateByTable("ACTIVITIES_COURSE");
+        g.generateByTable("SYS_USER");
 
     }
 }

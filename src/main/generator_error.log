@@ -1,14 +1,14 @@
-java.lang.RuntimeException: generate oucur error,templateFile is:${source_dir}\${classNameFirstLower}\entity\${className}Query.java => C:\Users\Administrator\git\genCode\.\src\main\java\com\msxf\zwf\activitiesCourse\entity\ActivitiesCourseQuery.java cause:freemarker.core.InvalidReferenceException: Expression aa is undefined on line 4, column 26 in ${source_dir}\${classNameFirstLower}\entity\${className}Query.java.
-	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.executeGenerate(Generator.java:319)
-	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.access$100(Generator.java:280)
-	at cn.org.rapid_framework.generator.Generator.scanTemplatesAndProcess(Generator.java:262)
-	at cn.org.rapid_framework.generator.Generator.processTemplateRootDirs(Generator.java:201)
-	at cn.org.rapid_framework.generator.Generator.generateBy(Generator.java:168)
-	at cn.org.rapid_framework.generator.GeneratorFacade$ProcessUtils.processByTable(GeneratorFacade.java:248)
-	at cn.org.rapid_framework.generator.GeneratorFacade$ProcessUtils.processByTable(GeneratorFacade.java:218)
-	at cn.org.rapid_framework.generator.GeneratorFacade.generateByTable(GeneratorFacade.java:107)
+java.lang.RuntimeException: generate oucur error,templateFile is:${source_dir}\${classNameFirstLower}\model\${className}.java => C:\Users\Administrator\git\genCode\.\src\main\java\com\msxf\zwf\sysUser\model\SysUser.java cause:freemarker.core.InvalidReferenceException: Expression table.remark is undefined on line 16, column 16 in ${source_dir}\${classNameFirstLower}\model\${className}.java.
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.executeGenerate(Generator.java:352)
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.access$100(Generator.java:308)
+	at cn.org.rapid_framework.generator.Generator.scanTemplatesAndProcess(Generator.java:288)
+	at cn.org.rapid_framework.generator.Generator.processTemplateRootDirs(Generator.java:216)
+	at cn.org.rapid_framework.generator.Generator.generateBy(Generator.java:179)
+	at cn.org.rapid_framework.generator.GeneratorFacade$ProcessUtils.processByTable(GeneratorFacade.java:275)
+	at cn.org.rapid_framework.generator.GeneratorFacade$ProcessUtils.processByTable(GeneratorFacade.java:243)
+	at cn.org.rapid_framework.generator.GeneratorFacade.generateByTable(GeneratorFacade.java:122)
 	at GenCode.main(GenCode.java:14)
-Caused by: freemarker.core.InvalidReferenceException: Expression aa is undefined on line 4, column 26 in ${source_dir}\${classNameFirstLower}\entity\${className}Query.java.
+Caused by: freemarker.core.InvalidReferenceException: Expression table.remark is undefined on line 16, column 16 in ${source_dir}\${classNameFirstLower}\model\${className}.java.
 	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
 	at freemarker.core.Expression.getStringValue(Expression.java:118)
 	at freemarker.core.Expression.getStringValue(Expression.java:93)
@@ -18,6 +18,6 @@ Caused by: freemarker.core.InvalidReferenceException: Expression aa is undefined
 	at freemarker.core.Environment.visit(Environment.java:196)
 	at freemarker.core.Environment.process(Environment.java:176)
 	at freemarker.template.Template.process(Template.java:232)
-	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.processTemplateForGeneratorControl(Generator.java:350)
-	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.executeGenerate(Generator.java:308)
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.processTemplateForGeneratorControl(Generator.java:388)
+	at cn.org.rapid_framework.generator.Generator$TemplateProcessor.executeGenerate(Generator.java:340)
 	... 8 more

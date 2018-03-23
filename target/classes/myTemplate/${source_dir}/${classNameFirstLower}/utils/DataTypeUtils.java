@@ -1,4 +1,6 @@
-package ${basepackage}.utils;
+<#assign className = table.className>
+<#assign classNameLower = className?uncap_first>
+package ${basepackage}.${classNameLower}.utils;
 
 import java.math.BigDecimal;
 import java.util.Date;

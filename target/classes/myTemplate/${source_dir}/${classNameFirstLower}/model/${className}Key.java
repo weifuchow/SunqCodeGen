@@ -3,7 +3,7 @@ ${gg.setIgnoreOutput(table.pkCount <= 1)}
 <#include "/macro.include"/>
 <#assign className = table.className>
 <#assign classNameLower = className?uncap_first> 
-package ${basepackage}.model;
+package ${basepackage}.${classNameLower}.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

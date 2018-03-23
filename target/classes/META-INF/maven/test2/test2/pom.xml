@@ -31,11 +31,12 @@
     </dependency>
 
 
-    <dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>ojdbc6</artifactId>
-      <version>11.1.0.7.0</version>
-    </dependency>
+   <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc6 -->
+	<dependency>
+	    <groupId>com.oracle</groupId>
+	    <artifactId>ojdbc6</artifactId>
+	    <version>11.1.0.7.0</version>
+	</dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -51,14 +52,14 @@
     <dependency>
       <groupId>com.googlecode.rapid-framework</groupId>
       <artifactId>rapid-core</artifactId>
-      <version>4.0</version>
+      <version>4.0.5</version>
     </dependency>
 
     <!-- 代码生成器核心引擎 -->
     <dependency>
       <groupId>com.googlecode.rapid-framework</groupId>
       <artifactId>rapid-generator</artifactId>
-      <version>4.0.3</version>
+      <version>4.0.6</version>
     </dependency>
 
     <!-- 代码生成器扩展包 -->
@@ -73,6 +74,10 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-data-solr</artifactId>
     </dependency>
   </dependencies>
 </project>

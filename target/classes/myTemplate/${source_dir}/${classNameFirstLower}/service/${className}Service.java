@@ -1,11 +1,11 @@
 <#assign className = table.className>
 <#assign classNameLower = className?uncap_first>
-package ${basepackage}.service;
+package ${basepackage}.${classNameLower}.service;
 
-import ${basepackage}.entity.${className}Query;
-import ${basepackage}.model.*;
+import ${basepackage}.${classNameLower}.entity.${className}Query;
+import ${basepackage}.${classNameLower}.model.*;
 import org.springframework.stereotype.Service;
-import ${basepackage}.repository.${className}Repository;
+import ${basepackage}.${classNameLower}.repository.${className}Repository;
 
 @Service
 public class ${className}Service extends BaseService<${className}Repository,${className}Query>{

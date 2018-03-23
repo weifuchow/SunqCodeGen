@@ -3,7 +3,7 @@
 
 package ${basepackage}.${classNameLower}.entity;
 
-import ${basepackage}.model.${className};
+import ${basepackage}.${classNameLower}.model.${className};
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.util.StringUtils;
 import javax.persistence.criteria.CriteriaBuilder;

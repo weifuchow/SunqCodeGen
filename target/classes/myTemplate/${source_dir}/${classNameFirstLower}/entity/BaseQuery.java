@@ -1,4 +1,6 @@
-package ${basepackage}.entity;
+<#assign className = table.className>
+<#assign classNameLower = className?uncap_first>
+package ${basepackage}.${classNameLower}.entity;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
