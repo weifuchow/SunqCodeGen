@@ -3,7 +3,7 @@
 <#assign classNameLower = className?uncap_first>
 package ${basepackage}.${classNameLower}.model;
 
-import ${basepackage}.${classNameLower}.utils.DataTypeUtils;
+import ${basepackage}.utils.DataTypeUtils;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.io.Serializable;

@@ -732,3 +732,70 @@ org.springframework.dao.EmptyResultDataAccessException: No class com.msxf.zwf.sy
 2018-03-23 17:03:53.394  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Fri Mar 23 16:01:39 CST 2018]; root of context hierarchy
 2018-03-23 17:03:53.421  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2018-03-23 17:03:53.422  INFO 10796 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 17:37:07.937  INFO 7584 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 7584 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 17:37:07.965  INFO 7584 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 17:37:08.026  INFO 7584 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Fri Mar 23 17:37:08 CST 2018]; root of context hierarchy
+2018-03-23 17:37:09.411  INFO 7584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 17:37:09.475  INFO 7584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 17:37:09.867  INFO 7584 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e019b5ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 17:37:10.607  INFO 7584 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 17:37:10.623  INFO 7584 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 17:37:10.625  INFO 7584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 17:37:10.790  INFO 7584 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 17:37:10.790  INFO 7584 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2768 ms
+2018-03-23 17:37:10.991  INFO 7584 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 17:37:10.997  INFO 7584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 17:37:10.999  INFO 7584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 17:37:10.999  INFO 7584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 17:37:11.001  INFO 7584 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 17:37:11.832  INFO 7584 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 17:37:11.877  INFO 7584 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-23 17:37:11.953  INFO 7584 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 17:37:11.955  INFO 7584 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 17:37:11.956  INFO 7584 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 17:56:40.479  INFO 11328 --- [main] com.msxf.zwf.GenCodeApplication          : Starting GenCodeApplication on IRIS-20161212TE with PID 11328 (C:\Users\Administrator\git\genCode\target\classes started by Administrator in C:\Users\Administrator\git\genCode)
+2018-03-23 17:56:40.481  INFO 11328 --- [main] com.msxf.zwf.GenCodeApplication          : No active profile set, falling back to default profiles: default
+2018-03-23 17:56:40.513  INFO 11328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Fri Mar 23 17:56:40 CST 2018]; root of context hierarchy
+2018-03-23 17:56:41.353  INFO 11328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 17:56:41.434  INFO 11328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-23 17:56:41.450  INFO 11328 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Solr - Could not safely identify store assignment for repository candidate interface com.msxf.zwf.sysSystems.repository.SysSystemsRepository.
+2018-03-23 17:56:41.789  INFO 11328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c6e0ecd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-23 17:56:42.119  INFO 11328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8801 (http)
+2018-03-23 17:56:42.129  INFO 11328 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-23 17:56:42.129  INFO 11328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-03-23 17:56:42.226  INFO 11328 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-23 17:56:42.226  INFO 11328 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1715 ms
+2018-03-23 17:56:42.354  INFO 11328 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-23 17:56:42.357  INFO 11328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-23 17:56:42.358  INFO 11328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-23 17:56:42.358  INFO 11328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-23 17:56:42.358  INFO 11328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-23 17:56:43.060  INFO 11328 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-23 17:56:43.069  INFO 11328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-23 17:56:43.118  INFO 11328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-23 17:56:43.119  INFO 11328 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-23 17:56:43.121  INFO 11328 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-23 17:56:43.153  INFO 11328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-23 17:56:43.245  INFO 11328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-03-23 17:56:43.680  INFO 11328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-23 17:56:44.038  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6193932a: startup date [Fri Mar 23 17:56:40 CST 2018]; root of context hierarchy
+2018-03-23 17:56:44.086  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysSystems/api/update],methods=[POST]}" onto public com.msxf.zwf.utils.entity.WeifuResult com.msxf.zwf.sysSystems.controller.SysSystemsController.UpdateSysUser(com.msxf.zwf.sysSystems.model.SysSystems)
+2018-03-23 17:56:44.087  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysSystems/api/delete],methods=[GET]}" onto public com.msxf.zwf.utils.entity.WeifuResult com.msxf.zwf.sysSystems.controller.SysSystemsController.UpdateSysUser(java.lang.Long)
+2018-03-23 17:56:44.088  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysSystems/api/add],methods=[POST]}" onto public com.msxf.zwf.utils.entity.WeifuResult com.msxf.zwf.sysSystems.controller.SysSystemsController.addSysSystems(com.msxf.zwf.sysSystems.model.SysSystems)
+2018-03-23 17:56:44.089  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sysSystems/api/query],methods=[GET]}" onto public com.msxf.zwf.utils.entity.WeifuResult com.msxf.zwf.sysSystems.controller.SysSystemsController.sysSystems(com.msxf.zwf.sysSystems.model.SysSystemsQuery)
+2018-03-23 17:56:44.090  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-23 17:56:44.091  INFO 11328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-23 17:56:44.116  INFO 11328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 17:56:44.116  INFO 11328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 17:56:44.145  INFO 11328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-23 17:56:44.423  INFO 11328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-23 17:56:44.483  INFO 11328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8801 (http)
+2018-03-23 17:56:44.487  INFO 11328 --- [main] com.msxf.zwf.GenCodeApplication          : Started GenCodeApplication in 4.262 seconds (JVM running for 4.858)
+2018-03-23 17:57:04.760  INFO 11328 --- [http-nio-8801-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-23 17:57:04.760  INFO 11328 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-23 17:57:04.779  INFO 11328 --- [http-nio-8801-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-03-23 17:57:05.481  INFO 11328 --- [http-nio-8801-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
