@@ -8,7 +8,7 @@ public class GenCode {
         String templatePath = ClassLoader.getSystemResource("myTemplate").toString();
         GeneratorFacade g = new GeneratorFacade();
         g.getGenerator().addTemplateRootDir(templatePath);
-        //删除生成器的输出目录//
+        //删除生成器的输出目录// test
         //g.deleteOutRootDir();
         //通过数据库表生成文件11
         g.generateByTable("sys_systems");
